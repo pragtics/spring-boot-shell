@@ -2,12 +2,15 @@ package de.pragtics.demos.springbootshell.commands;
 
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
+import org.springframework.shell.standard.ShellOption;
 
 @ShellComponent
 public class CalculatorCommands {
 
     @ShellMethod(value = "Add two integers together.", group = "Rechner")
-    public int add(int left, int right) {
+    public int add(
+            @ShellOption(help = "The first number.") int left,
+            @ShellOption(help = "The second number.") int right) {
 
         return left + right;
     }
