@@ -1,4 +1,4 @@
-# spring-boot-shell
+# Demo: Kommandozeilenanwendungen mit Spring Boot entwicklen
 
 Dieses kleine Projekt demonstriert das Erstellen einer Kommandozeilenanwendung mithilfe von Spring Boot und Spring Shell.
 
